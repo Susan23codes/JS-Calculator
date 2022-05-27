@@ -15,7 +15,9 @@ body {
     width: 425px;
     height: 600px;
     text-align: center;
-    background-color: rgb(69, 96, 106);
+    background-color: black;
+    opacity: .85;
+    /* background-color: rgb(69, 96, 106); */
     /* position: absolute; */
     margin: 0 auto;
     /* top: 50%;
@@ -23,7 +25,7 @@ body {
     /* margin: -200px auto 0 -137.5px; */
 }
 
-.display {
+#display {
     grid-column: 2 / span 3;
     text-align: end;
 }
@@ -36,7 +38,11 @@ button, input {
     font-size:  30px;
     box-shadow: 3px 2px 2px darkgray;
     /* border: 1px solid black; */
-    background-color: rgb(185, 201, 210);
+    /* background-color: rgb(185, 201, 210); */
+    background: rgb(2,0,36);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(91,91,101,1) 97%, rgba(0,212,255,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(94,95,101,1) 100%, rgba(0,212,255,1) 100%); */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(173,175,187,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 
