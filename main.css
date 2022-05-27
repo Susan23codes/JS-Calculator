@@ -1,14 +1,12 @@
 body {
-    /* position: relative; */
     height: 100vh;
 }
 
 .container {
     border: 3px solid;
     display: grid;
-    grid-template-columns: repeat( 4, 1fr);
-    grid-template-rows: repeat (4, auto);
-    /* grid-gap: 3px; */
+    grid-template-columns: repeat( 4, 1fr); */ 
+    grid-template-rows: repeat (5, auto);
     grid-row-gap: 3%;
     grid-column-gap: 3%;
     padding: 5px;
@@ -17,12 +15,7 @@ body {
     text-align: center;
     background-color: black;
     opacity: .85;
-    /* background-color: rgb(69, 96, 106); */
-    /* position: absolute; */
     margin: 0 auto;
-    /* top: 50%;
-    left: 50%; */
-    /* margin: -200px auto 0 -137.5px; */
 }
 
 #display {
@@ -30,11 +23,29 @@ body {
     text-align: end;
 }
 
-button:hover, input:hover {
+#equals {
+    grid-row: 5 / span 2
+    
+}
+
+#plus {
+    grid-column: 4;
+}
+
+#minus {
+    grid-column: 4;
+}
+
+#backspace {
+    grid-column: 2 / span 2;
+}
+
+button, #backspace:hover, input:hover {
     background-color: rgb(147, 156, 170);
 }
 
-button, input {
+button, input, #backspace {
+    border-radius: 5px;
     font-size:  30px;
     box-shadow: 3px 2px 2px darkgray;
     /* border: 1px solid black; */
