@@ -19,6 +19,8 @@ body {
 }
 
 #display {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
     grid-column: 2 / span 3;
     text-align: end;
 }
@@ -40,8 +42,10 @@ body {
     grid-column: 2 / span 2;
 }
 
-button, #backspace:hover, input:hover {
-    background-color: rgb(147, 156, 170);
+button:hover, input:hover, #backspace:hover {
+    /* background-color: rgb(147, 156, 170); */
+    background-image: linear-gradient(to bottom, rgb(147, 156, 170) 0%, rgb(147, 156, 170) 100%);
+
 }
 
 button, input, #backspace {
@@ -53,7 +57,7 @@ button, input, #backspace {
     background: rgb(2,0,36);
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(91,91,101,1) 97%, rgba(0,212,255,1) 100%); */
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(94,95,101,1) 100%, rgba(0,212,255,1) 100%); */
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(173,175,187,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(173,175,187,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 
