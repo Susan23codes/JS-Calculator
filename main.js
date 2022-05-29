@@ -11,8 +11,12 @@ for (let button of buttons) {
 
 function addToDisplay(event) {
     let textOnButtonClicked = event.target.innerText
-    // console.log(event)
+    if (textOnButtonClicked === "." && result.value.length === 0) {
+        console.log("yay!")
+        result.value = "0" + ".";
+    } else {
     result.value = result.value + textOnButtonClicked;
+    }
 }
 function clearScreen() {
     result.value = "";
@@ -37,3 +41,5 @@ function clearScreen() {
     console.log(newString)
     result.value = newString;
  }
+
+ 

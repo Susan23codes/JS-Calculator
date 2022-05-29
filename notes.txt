@@ -22,3 +22,5 @@ function clearScreen() {
     // let result = document.getElementById("display")
      result.value = eval(result.value);
  }
+
+ 
