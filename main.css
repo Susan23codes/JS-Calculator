@@ -19,10 +19,19 @@ body {
 }
 
 #display {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
     font-family: 'Orbitron', sans-serif;
     font-size: 35px;
     grid-column: 2 / span 3;
-    text-align: end;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size:  30px;
+    box-shadow: 3px 2px 2px darkgray;
+    background: rgb(2,0,36);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,107,121,1) 4%, rgba(173,175,187,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 #equals {
